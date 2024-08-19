@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1. Create a signup form and display form data in your web
+page on submission. -->
+    
+    
+   <div class="container">
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password"  required>
+        <button type="submit">Sign up</button>
+
+    </form>
+    <div id="formdata"></div>
+   </div>
+
+<!-- 
+   2. Suppose in your webpage there is content area in which
+you have entered your item details, but user can only see
+some details on first look. When user clicks on “Read
+more” button, full detail of that particular item will be
+displayed. -->
+
+   <p id="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#" onclick="expand()"><em>Read more</em></a>
+   </p>
+
+   <!-- 3. In previous assignment you have created a tabular data
+using javascript. Let’s modify that. Create a form which
+takes student’s details and show each student detail in
+table. Each row of table must contain a delete button and
+an edit button. On click on delete button entire row should
+be deleted. On click on edit button, a hidden form will
+appear with the values of that row. -->
+
+<h1>Addmission Form</h1>
+<form action="" id="studentForm">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+    <br></br>
+
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" required>
+    <br></br>
+
+    <label for="class">Class</label>
+    <input type="text" name="class" id="class" required>
+    <br></br>
+    
+    <button type="submit">Add Student</button>
+
+</form>
+
+<table id="studentTable">
+
+    <thead>
+
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<br></br>
+<div id="editFormContent" class="hidden">
+
+    <form action="" id="editForm">
+
+        <h1>Edit Student Details</h1>
+        <input type="hidden" id="editIndex">
+
+        <label for="editName">Name:</label>
+        <input type="text" name="editName" id="editName" required>
+        <br></br>
+
+        <label for="editAge">Age:</label>
+        <input type="number" name="editAge" id="editAge" required>
+        <br></br>
+
+
+        <label for="editClass">Class:</label>
+        <input type="text" id="editClass" name="editClass" required>
+        <br></br>
+
+        <button type="submit">Update Student</button>
+    </form>
+</div>
+
+
+  
+
+    <script src="app.js"></script>
+</body>
+</html>
